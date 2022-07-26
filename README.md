@@ -18,8 +18,6 @@ PRTR_transfers
 ├── ancillary
 |
 ├── data_driven
-│   ├── __init__.py
-│   ├── main.py
 │   ├── data_preparation
 │   │   ├── __init__.py
 │   │   ├── main.py
@@ -49,45 +47,7 @@ PRTR_transfers
 │       └── output
 │    
 └── data_engineering
-    ├── __init__.py
-    ├── main.py
-    ├── extract
-    |   ├── __init__.py
-    │   ├── config.yaml
-    │   ├── main.py
-    |   ├── common.py
-    │   ├── npi_scraper.py
-    │   ├── npri_scraper.py
-    │   ├── tri_scraper.py
-    │   ├── srs_scraper.py
-    │   ├── nlm_scraper.py
-    │   ├── pubchem_scraper.py
-    │   └── output
-    │ 
-    ├── transform
-    |   ├── __init__.py
-    │   ├── main.py
-    │   ├── common.py
-    │   ├── industry_sector_standardizing.py
-    │   ├── chemical_standardizing.py
-    │   ├── naics_normalization.py
-    │   ├── npi_transformer.py
-    │   ├── npri_transformer.py
-    │   ├── tri_transformer.py
-    │   ├── database_normalization.py
-    │   └── output
-    │ 
     └── load
-        ├── __init__.py
-        ├── main.py
-        ├── industry_sector.py
-        ├── facility.py
-        ├── prtr_system.py
-        ├── record.py
-        ├── substance.py
-        ├── transfer.py
-        ├── chemical.py
-        ├── base.py
         └── output
 
 ```
@@ -172,9 +132,11 @@ The Extract, Transform, Load (ETL) procedure uses an Object–Relational Mapping
 
 ## 3. How to use
 
-### 3.1. Data engineering module
+### 3.1. Data-driven module
 
-You can use each .py file in the data engineering module separately. However, the developed module enables to run the ETL pipeline using the main.py inside the [datan_engineering](https://github.com/jodhernandezbe/PRTR_transfers/tree/master/data_engineering) folder. Thus, follow the above steps:
+#### 3.1.1. Data preparation
+
+In order to run the data preparation, you should use the main.py file inside the [data_preparation](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/data_preparation). Follow the following steps:
 
 <ol>
    <li>
@@ -200,11 +162,25 @@ You can use each .py file in the data engineering module separately. However, th
           --host HOST          The computer hosting for the database
           --port PORT          Port used by the database engine
           --db_name DB_NAME    Database name
-          --sql_file {True,False}
-                               Would you like to obtain .SQL file
+          --id                 What id would your like to use for the data preparation workflow
+          --before_2005        Would you like to include data reported before 2005?
+          --including_groups   Would you like to include the chemical groups
+          --grouping_type      How you want to calculate descriptors for the chemical groups
+          --flow_handling      How you want to handle the transfer flow rates
+          --number_of_intervals How many intervals would you like to use for the transfer flow rates
+          --output_column      What column would you like to keep as the classifier output
+          --outliers_removal   Would you like to keep the outliers
+          --balanaced_split    Would you like to obtain an stratified train-test split?
+          --dimensionality_reduction What method for dimensionality reduction would you like to apply?. In this point, after encoding, we only apply feature      transformation by FAMD - Factor Analysis of Mixed Data or feature selection by UFS - Univariate Feature Selection with mutual infomation (filter method) or RFC - Random Forest Classifier (embedded method via feature importance)
+          --balanced_dataset  Would you like to balance the dataset
+          --classification_type What kind of classification problem would you like
+          --target_class       If applied, What is the target class (only for multi-model binary classification)
+          --input_file        Do you have an input file?
+          --save_info          Would you like to save information?
+          --data_fraction_to_use  What fraction of the data would you like to use?'
    </li>
    <li>
-    You must indicate the value for each parameter, e.g., if you would like to name your database as PRTR, you write <code>--dn_name PRTR</code>. Each argument       except <code>--password</code> has a default value (see the table below)
+    You must indicate the value for each parameter. Each argument except <code>--password</code> has a default value (see the table below)
     
    |Argument|Default| Comment |
    |---|---|---|
@@ -213,7 +189,17 @@ You can use each .py file in the data engineering module separately. However, th
    | host | 127.0.0.1 | 127.0.0.1 (localhost) is the default host for MySQL. The same is for PostgreSQL |
    | port | 3306 | 3306 is the default port for MySQL. For PostgreSQL is 5432 |
    | db_name | PRTR_transfers | You are free to choose a name for the database |
-   | sql_file | False | Only two options: True and False |
+   | id | 0 | You are free to choose an id for your workflow |
+   | before_2005 | True |  |
+   | including_groups | True |  |
+   | grouping_type | 1 | - (1) mean value without outliers (default)
+     - (2) mean value with outliers
+    - (3) median value
+    - (4) min value
+    - (5) max value
+    - (6) random value
+    - (7) random chemical
+    - (8) keep chemicals (keep all chemicals having non-null records (95%)) |
    </li>
 </ol>
 
