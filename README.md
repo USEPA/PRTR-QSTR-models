@@ -203,7 +203,7 @@ In order to run the data preparation, you should use the main.py file inside the
    | balanced_dataset | True |  |
    | classification_type | multi-class classification | Options: multi-model binary classification, multi-label classification, and multi-class classification |
    | target_class | M1 | Options: M1, M2, M3, M4, M5, M6, M7, M8, M9, M10, Disposal, Sewerage, Treatment, Energy recovery, and Recycling |
-   | input_file | No |  |
+   | input_file | No | Look at the following sample file [data_preparations.xlsx](https://github.com/USEPA/PRTR-QSTR-models/blob/data-driven/data_driven/data_preparation/input/data_preparations.xlsx) |
    | save_info | No |  |
    | data_fraction_to_use | 1.0 | You are free to choose a value for your workflow |
    </li>
