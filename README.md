@@ -192,9 +192,7 @@ In order to run the data preparation, you should use the main.py file inside the
    | id | 0 | You are free to choose an id for your workflow |
    | before_2005 | True |  |
    | including_groups | True |  |
-   | grouping_type | 1 | <ol> <li> (1) mean value without outliers (default)</li>
-     <li> (2) mean value with outliers</li>
-     <li> (3) median value</li>
+   | grouping_type | 1 | <ol> <li> (1) mean value without outliers (default)</li><li> (2) mean value with outliers</li><li> (3) median value</li>
      <li> (4) min value</li>
      <li> (5) max value</li>
      <li> (6) random value</li>
