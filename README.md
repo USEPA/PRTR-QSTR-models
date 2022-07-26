@@ -192,12 +192,20 @@ In order to run the data preparation, you should use the main.py file inside the
    | id | 0 | You are free to choose an id for your workflow |
    | before_2005 | True |  |
    | including_groups | True |  |
-   | grouping_type | 1 | <ol> <li> (1) mean value without outliers (default)</li><li> (2) mean value with outliers</li><li> (3) median value</li>
-     <li> (4) min value</li>
-     <li> (5) max value</li>
-     <li> (6) random value</li>
-     <li> (7) random chemical</li>
-     <li> (8) keep chemicals (keep all chemicals having non-null records (95%))</li> </ol> |
+   | grouping_type | 1 | <ol> <li> (1) mean value without outliers</li><li> (2) mean value with outliers</li><li> (3) median value</li><li> (4) min value</li><li> (5) max value</li><li> (6) random value</li><li> (7) random chemical</l<li> (8) keep chemicals (keep all chemicals having non-null records (95%))</li> </ol> |
+   | flow_handling | 1 |  <ol><li> (1) Float values</li><li> (2) Integer values</li></ol><li> (3) m balanced intervals split by quantiles</ol><li> (4) m non-balanced equal-width intervals</li></ol> |
+   | number_of_intervals | 10 | You are free to choose a value for your workflow |
+   | output_column | generic | Whether you use the generic transfer classes as the model output or the waste managementh hiearchy categories |
+   | outliers_removal | True |  |
+   | balanaced_split | True |  |
+   | dimensionality_reduction | True |  |
+   | dimensionality_reduction_method | FAMD | Options: FAMD, UFS, and RFC |
+   | balanced_dataset | True |  |
+   | classification_type | multi-class classification | Options: multi-model binary classification, multi-label classification, and multi-class classification |
+   | target_class | M1 | Options: M1, M2, M3, M4, M5, M6, M7, M8, M9, M10, Disposal, Sewerage, Treatment, Energy recovery, and Recycling |
+   | input_file | No |  |
+   | save_info | No |  |
+   | data_fraction_to_use | 1.0 | You are free to choose a value for your workflow |
    </li>
 </ol>
 
