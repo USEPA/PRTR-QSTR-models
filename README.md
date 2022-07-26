@@ -1,6 +1,6 @@
 # PRTR transfers API deployment
 
-This repository contains the scripts for the deployment of the best models found in https://github.com/jodhernandezbe/PRTR_transfers
+This repository contains the scripts for the deployment of the best models found in https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven
 
 # Remote
 
