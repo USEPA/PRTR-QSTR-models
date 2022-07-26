@@ -193,7 +193,7 @@ In order to run the data preparation, you should use the main.py file inside the
    | before_2005 | True |  |
    | including_groups | True |  |
    | grouping_type | 1 | <ol> <li> (1) mean value without outliers</li><li> (2) mean value with outliers</li><li> (3) median value</li><li> (4) min value</li><li> (5) max value</li><li> (6) random value</li><li> (7) random chemical</l<li> (8) keep chemicals (keep all chemicals having non-null records (95%))</li> </ol> |
-   | flow_handling | 1 |  <ol><li> (1) Float values</li><li> (2) Integer values</li></ol><li> (3) m balanced intervals split by quantiles</ol><li> (4) m non-balanced equal-width intervals</li></ol> |
+   | flow_handling | 1 |  <ol><li> (1) Float values</li><li> (2) Integer values</li><li> (3) m balanced intervals split by quantiles</li><li> (4) m non-balanced equal-width intervals</li></ol> |
    | number_of_intervals | 10 | You are free to choose a value for your workflow |
    | output_column | generic | Whether you use the generic transfer classes as the model output or the waste managementh hiearchy categories |
    | outliers_removal | True |  |
