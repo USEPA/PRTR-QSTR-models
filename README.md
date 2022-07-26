@@ -209,6 +209,10 @@ In order to run the data preparation, you should use the main.py file inside the
    </li>
 </ol>
 
+#### 3.1.2. Modelling
+
+For modelling, as a normal Data Science practice, you can check the [Jupyter Notebooks](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/notebooks) to run each experiment iteractively. Those notebooks call functions that are stored in the [scripts](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/scripts) folder. The input [folder](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/input) contains information used to set the model params both for building the base model and perform hyperparameter tuning. The [output](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/output) folder container the results obtain during the modelling and optimization stages.
+ 
 <hr/>
 
 ## 4. Notes
