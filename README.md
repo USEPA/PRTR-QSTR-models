@@ -136,7 +136,7 @@ The Extract, Transform, Load (ETL) procedure uses an Object–Relational Mapping
 
 #### 3.1.1. Data preparation
 
-In order to run the data preparation, you should use the main.py file inside the [data_preparation](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/data_preparation). Follow the following steps:
+In order to run the data preparation, you should use the main.py file inside the [data_preparation](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/data_preparation) folder. Follow the following steps:
 
 <ol>
    <li>
@@ -211,7 +211,7 @@ In order to run the data preparation, you should use the main.py file inside the
 
 #### 3.1.2. Modelling
 
-For modelling, as a normal Data Science practice, you can check the [Jupyter Notebooks](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/notebooks) to run each experiment iteractively. Those notebooks call functions that are stored in the [scripts](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/scripts) folder. The input [folder](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/input) contains information used to set the model params both for building the base model and perform hyperparameter tuning. The [output](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/output) folder container the results obtain during the modelling and optimization stages.
+For modelling, as a normal Data Science practice, you can check the [Jupyter Notebooks](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/notebooks) to run each experiment iteractively. Those notebooks call functions that are stored in the [scripts](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/scripts) folder. The input [folder](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/input) contains information used to set the model params both for building the base model and perform hyperparameter tuning. The [output](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/output) folder contains the results obtain during the modelling and optimization stages.
  
 <hr/>
 
