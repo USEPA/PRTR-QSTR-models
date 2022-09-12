@@ -218,7 +218,7 @@ python main.py --rdbms postgresql --input_file Yes --save_info Yes --data_fracti
 ```
 <ul>
 <li>In the command described above, it is assumed you are using PostgreSQL with default parameters (i.e., host, port, and username).</li>
-<li>Replace ```your-rdbms-password``` with your PostgreSQL password.</li>
+<li>Replace your-rdbms-password with your PostgreSQL password.</li>
 <li>The .zip file called [PRTR_transfers_v_PostgreSQL.zip](https://github.com/USEPA/PRTR-QSTR-models/blob/data-driven/data_engineering/load/output/PRTR_transfers_v_PostgreSQL.zip) will be used for creating the database schema and populating the tables.</li>
 <li>To avoid the problem with disk space, you should upload the data to a cloud storage service like Google Drive, which will facilitate you to follow the modeling stage presented below.</li>
 </ul>
