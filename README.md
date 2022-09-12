@@ -209,7 +209,7 @@ In order to run the data preparation, you should use the main.py file inside the
    </li>
 </ol>
 
-##### 3.1.1.1. Data preparation (paper)
+##### Data preparation (paper)
 
 In the case of the data preparation pipelines that are part of the paper, you have to use the [.xlsx file](https://github.com/USEPA/PRTR-QSTR-models/blob/data-driven/data_driven/data_preparation/input/data_preparations.xlsx) and run the following command:
 
@@ -227,11 +227,11 @@ python main.py --rdbms postgresql --input_file Yes --save_info Yes --data_fracti
 
 For modelling, as a normal Data Science practice, you can check the [Jupyter Notebooks](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/notebooks) to run each experiment iteractively. Those notebooks call functions that are stored in the [scripts](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/scripts) folder. The input [folder](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/input) contains information used to set the model params both for building the base model and perform hyperparameter tuning. The [output](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/output) folder contains the results obtain during the modelling and optimization stages.
 
-##### 3.1.2.1. Modelling (paper)
+##### Modelling (paper)
 
 <ol>
   <li>After uploading the processed data to Google Drive, follow the steps described in the [link](https://www.geeksforgeeks.org/get-list-of-files-and-folders-in-google-drive-storage-using-python/) in order to obtain your credentials.</li>
-  <li>Name the .json containing your credentials as client_secrets.json and save it into [notebooks folder](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/notebooks).</li>
+  <li>Name the .json containing your credentials as client_secrets.json and save it into the [notebooks folder](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/notebooks).</li>
 </ol>
  
 <hr/>
