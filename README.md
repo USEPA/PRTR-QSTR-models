@@ -209,9 +209,20 @@ In order to run the data preparation, you should use the main.py file inside the
    </li>
 </ol>
 
+##### 3.1.1.1. Data preparation (paper)
+
+In the case of the data preparation pipelines that are part of the paper, you have to use the [.xlsx file](https://github.com/USEPA/PRTR-QSTR-models/blob/data-driven/data_driven/data_preparation/input/data_preparations.xlsx) and run the following command:
+
+```
+python main.py --rdbms postgresql --input_file Yes --save_info Yes --data_fraction_to_use 0.3
+```
+
+To avoid the problem with disk space, you should upload the data to a cloud storage service like Google Drive, which will facilitate you to follow the modeling stage presented below. The command described above you are using PostgreSQL with default parameters. In addition, the .zip file called [PRTR_transfers_v_PostgreSQL.zip](https://github.com/USEPA/PRTR-QSTR-models/blob/data-driven/data_engineering/load/output/PRTR_transfers_v_PostgreSQL.zip) will be used for creating the database schema and populating the tables.
+
 #### 3.1.2. Modelling
 
 For modelling, as a normal Data Science practice, you can check the [Jupyter Notebooks](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/notebooks) to run each experiment iteractively. Those notebooks call functions that are stored in the [scripts](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/scripts) folder. The input [folder](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/input) contains information used to set the model params both for building the base model and perform hyperparameter tuning. The [output](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/output) folder contains the results obtain during the modelling and optimization stages.
+
  
 <hr/>
 
