@@ -217,7 +217,7 @@ In the case of the data preparation pipelines that are part of the paper, you ha
 python main.py --rdbms postgresql --input_file Yes --save_info Yes --data_fraction_to_use 0.3
 ```
 
-To avoid the problem with disk space, you should upload the data to a cloud storage service like Google Drive, which will facilitate you to follow the modeling stage presented below. The command described above you are using PostgreSQL with default parameters. In addition, the .zip file called [PRTR_transfers_v_PostgreSQL.zip](https://github.com/USEPA/PRTR-QSTR-models/blob/data-driven/data_engineering/load/output/PRTR_transfers_v_PostgreSQL.zip) will be used for creating the database schema and populating the tables.
+The .zip file called [PRTR_transfers_v_PostgreSQL.zip](https://github.com/USEPA/PRTR-QSTR-models/blob/data-driven/data_engineering/load/output/PRTR_transfers_v_PostgreSQL.zip) will be used for creating the database schema and populating the tables. To avoid the problem with disk space, you should upload the data to a cloud storage service like Google Drive, which will facilitate you to follow the modeling stage presented below.
 
 #### 3.1.2. Modelling
 
