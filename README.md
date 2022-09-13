@@ -245,8 +245,8 @@ For modelling, as a normal Data Science practice, you can check the [Jupyter Not
 ##### Modelling (paper)
 
 <ol>
-  <li>After uploading the processed data to Google Drive, follow the steps described in the [link](https://www.geeksforgeeks.org/get-list-of-files-and-folders-in-google-drive-storage-using-python/) in order to obtain your credentials.</li>
-  <li>Name the .json containing your credentials as client_secrets.json and save it into the [notebooks folder](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/notebooks).</li>
+  <li>After uploading the processed data to Google Drive, follow the steps described in the [link](https://www.geeksforgeeks.org/get-list-of-files-and-folders-in-google-drive-storage-using-python/) in order to obtain your credentials</li>
+  <li>Name the .json containing your credentials as client_secrets.json and save it into the [Jupyter Notebooks](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/notebooks)</li>
 </ol>
  
 <hr/>
