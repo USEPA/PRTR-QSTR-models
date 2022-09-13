@@ -247,6 +247,12 @@ For modelling, as a normal Data Science practice, you can check the [Jupyter Not
 <ol>
   <li>After uploading the processed data to Google Drive, follow the steps described in the https://www.geeksforgeeks.org/get-list-of-files-and-folders-in-google-drive-storage-using-python/ in order to obtain your credentials</li>
   <li>Name the .json containing your credentials as client_secrets.json and save it into https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/notebooks</li>
+  <li>
+    In each notebook, you will need the folder ids containing the data for each modeling strategy. For obtaining the folder ids, right click on the folder and copy link
+    <p align="center">
+    <img src=https://imgur.com/rRvIJSQ.png width="50%">
+    </p>
+  </li>
 </ol>
  
 <hr/>
