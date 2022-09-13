@@ -252,7 +252,7 @@ For modelling, as a normal Data Science practice, you can check the [Jupyter Not
     <p align="center">
     <img src=https://imgur.com/rRvIJSQ.png width="50%">
     </p>
-    You will obtaing a like like the following https://drive.google.com/drive/folders/<folder-id>?usp=sharing, where folder-id is what you will need to provide inside each notebook, see the example below:
+    You will obtaing a like like the following https://drive.google.com/drive/folders/folder-id?usp=sharing, where ```folder-id``` is what you will need to provide inside each notebook, see the example below:
     <p align="center">
     <img src=https://imgur.com/UGs3425.png width="50%">
     </p>
