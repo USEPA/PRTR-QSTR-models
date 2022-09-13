@@ -232,7 +232,6 @@ python main.py --rdbms postgresql --input_file Yes --save_info Yes --data_fracti
   </li>
 <li>
   Upload the processed data according to the modelling strategy:
-  
     <p align="center">
     <img src=https://imgur.com/mW2BVOk.png width="50%">
     </p>
