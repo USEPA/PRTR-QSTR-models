@@ -225,7 +225,7 @@ python main.py --rdbms postgresql --input_file Yes --save_info Yes --data_fracti
     Replace your_rdbms_password with your PostgreSQL password
   </li>
   <li>
-    The .zip file called [PRTR_transfers_v_PostgreSQL](https://github.com/USEPA/PRTR-QSTR-models/blob/data-driven/data_engineering/load/output/PRTR_transfers_v_PostgreSQL.zip ) will be used for creating the database schema and populating the tables
+    The .zip file called PRTR_transfers_v_PostgreSQL(see https://github.com/USEPA/PRTR-QSTR-models/blob/data-driven/data_engineering/load/output/PRTR_transfers_v_PostgreSQL.zip) will be used for creating the database schema and populating the tables
   </li>
   <li>
     To avoid the problem with disk space, you should upload the data to a cloud storage service like Google Drive, which will facilitate you to follow the modeling stage presented below
@@ -245,8 +245,8 @@ For modelling, as a normal Data Science practice, you can check the [Jupyter Not
 ##### Modelling (paper)
 
 <ol>
-  <li>After uploading the processed data to Google Drive, follow the steps described in the [link](https://www.geeksforgeeks.org/get-list-of-files-and-folders-in-google-drive-storage-using-python/) in order to obtain your credentials</li>
-  <li>Name the .json containing your credentials as client_secrets.json and save it into the [Jupyter Notebooks](https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/notebooks)</li>
+  <li>After uploading the processed data to Google Drive, follow the steps described in the https://www.geeksforgeeks.org/get-list-of-files-and-folders-in-google-drive-storage-using-python/ in order to obtain your credentials</li>
+  <li>Name the .json containing your credentials as client_secrets.json and save it into https://github.com/USEPA/PRTR-QSTR-models/tree/data-driven/data_driven/modeling/notebooks</li>
 </ol>
  
 <hr/>
