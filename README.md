@@ -4,9 +4,9 @@ This repository contains the scripts for the deployment of the best models found
 
 # Remote
 
-This API was deployed at Heroku where you can also test it from the docs endpoint
+This API was deployed at AWS where you can also test it from the docs endpoint
 
-https://prtr-ml-models.herokuapp.com/v1/api_documentation
+http://3.92.83.22:5000/v1/api_documentation
 
 # Local use
 
